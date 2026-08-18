@@ -1,5 +1,9 @@
 # CardIndex
 
+> 🇫🇷 **CardIndex est maintenant public !** Cette première version permet d’explorer les checklists Topps Football, les joueurs, les extensions et les raretés. Le site est disponible sur [keyssouu.github.io/cardindex](https://keyssouu.github.io/cardindex/).
+>
+> 🇬🇧 **CardIndex is now public!** This first version lets collectors explore Topps Football checklists, players, releases, and rarities. Visit [keyssouu.github.io/cardindex](https://keyssouu.github.io/cardindex/).
+
 ## Français
 
 CardIndex est un répertoire interactif de cartes Topps Football. Il permet d’explorer des checklists officielles, de parcourir les cartes par club et par catégorie (Base, Inserts, Autographes), puis de retrouver les extensions dans lesquelles figure un joueur.
