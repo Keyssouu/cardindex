@@ -111,13 +111,15 @@ function openCollection(id) {
   const clubs = new Map();
   appearances.forEach(entry => { if (!clubs.has(entry.team)) clubs.set(entry.team, []); clubs.get(entry.team).push(entry); });
   const clubCards = [...clubs.entries()].sort(([a], [b]) => a.localeCompare(b, 'fr')).map(([club, cards]) => {
-    const sections = new Map();
+    const categories = new Map();
     cards.forEach(entry => {
-      const key = `${categoryFor(entry)}|${entry.section}`;
-      if (!sections.has(key)) sections.set(key, { category: categoryFor(entry), name: entry.section, entries: [] });
-      sections.get(key).entries.push(entry);
+      const category = categoryFor(entry);
+      if (!categories.has(category)) categories.set(category, new Map());
+      const styles = categories.get(category);
+      if (!styles.has(entry.section)) styles.set(entry.section, []);
+      styles.get(entry.section).push(entry);
     });
-    const content = [...sections.values()].sort((a, b) => categoryRank(a.category) - categoryRank(b.category) || a.name.localeCompare(b.name, 'fr')).map(group => `<section class="club-section"><h4>${group.category}</h4><h5>${group.name}</h5>${group.entries.sort((a, b) => a.player.localeCompare(b.player, 'fr') || a.ref.localeCompare(b.ref)).map(entry => `<button type="button" data-player="${encodeURIComponent(entry.player)}"><span>${entry.player}${entry.rookie ? '<i>Rookie</i>' : ''}</span><small>${entry.ref}</small><b>↗</b></button>`).join('')}</section>`).join('');
+    const content = [...categories.entries()].sort(([a], [b]) => categoryRank(a) - categoryRank(b) || a.localeCompare(b, 'fr')).map(([category, styles]) => `<section class="club-category"><h4>${category}</h4>${[...styles.entries()].sort(([a], [b]) => a.localeCompare(b, 'fr')).map(([style, styleCards]) => `<div class="card-style"><h5>${style}</h5>${styleCards.sort((a, b) => a.player.localeCompare(b.player, 'fr') || a.ref.localeCompare(b.ref)).map(entry => `<button type="button" data-player="${encodeURIComponent(entry.player)}"><span>${entry.player}${entry.rookie ? '<i>Rookie</i>' : ''}</span><small>${entry.ref}</small><b>↗</b></button>`).join('')}</div>`).join('')}</section>`).join('');
     return `<article class="club-card"><header><span class="club-badge">${club.split(' ').map(part => part[0]).join('').slice(0, 3)}</span><h3>${club}</h3><small>${cards.length} cartes</small></header>${content}</article>`;
   }).join('');
   dialog.classList.add('collection-dialog');
