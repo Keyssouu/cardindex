@@ -7,7 +7,7 @@ const sources = [
 ];
 
 const teams = ['Paris Saint-Germain', 'Manchester United', 'Manchester City', 'Manchester City FC', 'Nottingham Forest', 'Wolverhampton Wanderers', 'Brighton & Hove Albion', 'AFC Bournemouth', 'Crystal Palace', 'Tottenham Hotspur', 'West Ham United', 'Newcastle United', 'Aston Villa', 'Leeds United', 'Liverpool FC', 'Chelsea FC', 'Chelsea', 'Arsenal FC', 'Arsenal', 'Everton', 'Fulham', 'Brentford', 'Burnley FC', 'Sunderland', 'FC Barcelona', 'Real Madrid C.F.', 'Real Betis Balompié', 'FC Bayern München', 'FC Bayern Munich', 'FC Internazionale Milano', 'FC Internazionle Milano', 'FC Internazionale', 'Borussia Dortmund', 'Bayer 04 Leverkusen', 'VfB Stuttgart', 'ACF Fiorentina', 'SSC Napoli', 'AS Roma', 'Atalanta BC', 'Juventus', 'FC Porto', 'LOSC Lille', 'F.C. Copenhagen', 'SL Benfica', 'Sporting Clube de Portugal', 'Atlético de Madrid', 'Athletic Club', 'AFC Ajax', 'PSV Eindhoven', 'Celtic FC', 'Rangers F.C.', 'Eintracht Frankfurt', 'KRC Genk', 'RC Strasbourg Alsace', 'AS Monaco', 'AC Milan'];
-const teamPattern = new RegExp(`\\s+(${teams.sort((a, b) => b.length - a.length).map(escapeRegex).join('|')})(?:\\s+Rookie)?$`, 'i');
+const teamPattern = new RegExp(`\\s*(${teams.sort((a, b) => b.length - a.length).map(escapeRegex).join('|')})(?:\\s*Rookie)?$`, 'i');
 let entries = [];
 
 const grid = document.querySelector('#collection-grid');
@@ -35,7 +35,7 @@ function renderCollections() {
 function parseChecklist(text, source) {
   let section = 'Checklist';
   let category = 'BASE';
-  return fixEncoding(text).split(/\r?\n/).flatMap(raw => {
+  return fixEncoding(text).replace(/\\n/g, '\n').split(/\r?\n/).flatMap(raw => {
     const line = raw.trim().replace(/\s+/g, ' ');
     if (/^[A-Z][A-Z &’'/-]{3,}$/.test(line) && !/^CHECKLIST$/.test(line)) {
       if (/^(BASE|INSERTS?|AUTOGRAPHS?|AUTOGRAPH CARDS|RELICS?)$/.test(line)) { category = line.startsWith('AUTO') ? 'AUTOGRAPH' : line.startsWith('INSERT') ? 'INSERT' : line.startsWith('RELIC') ? 'RELIC' : 'BASE'; return []; }
@@ -44,8 +44,8 @@ function parseChecklist(text, source) {
     if (!/^(?:[A-Z]{1,7}-)?[A-Z0-9]+\s+/.test(line)) return [];
     const match = line.match(/^([A-Z]{1,7}-)?([A-Z0-9]+)\s+(.+)$/);
     if (!match) return [];
-    const rookie = /\s+Rookie$/i.test(match[3]);
-    let textPart = match[3].replace(/\s+Rookie$/i, '');
+    const rookie = /Rookie\s*$/i.test(match[3]);
+    let textPart = match[3].replace(/\s*(Rookie|Veteran|Former Player|Legend|Retired|On-Card)\s*$/i, '');
     const teamMatch = textPart.match(teamPattern);
     if (!teamMatch) return [];
     const player = textPart.slice(0, teamMatch.index).trim();
