@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CardIndex — Le répertoire Topps Football</title>
+    <meta name="description" content="Checklists officielles Topps Football et index des joueurs." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="football.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="CardIndex, accueil"><span class="brand-mark">C</span><span>Card<span>Index</span></span></a>
+      <nav aria-label="Navigation principale"><a class="active" href="#collections">Checklists</a><a href="#joueurs">Joueurs</a><a href="#guide">Le guide</a></nav>
+      <button class="header-action" type="button">Ma collection <span>↗</span></button>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">Le répertoire des cartes Topps Football</p>
+        <h1>Chaque joueur,<br /><em>toutes ses cartes.</em></h1>
+        <p class="hero-copy">Explorez les checklists officielles Topps Football, puis cliquez sur un joueur pour retrouver chaque extension dans laquelle il apparaît.</p>
+        <a class="button button-primary" href="#joueurs">Rechercher un joueur <span>↓</span></a>
+        <div class="hero-stat"><strong id="hero-player-count">—</strong><span>joueurs<br />indexés</span></div>
+        <div class="hero-cards" aria-hidden="true">
+          <article class="mini-card card-one"><span>TOPPS</span><b>FINEST<br />PL</b><i>2026</i></article>
+          <article class="mini-card card-two"><span>TOPPS</span><b>UCC<br />DECO</b><i>25/26</i></article>
+          <article class="mini-card card-three"><span>TOPPS</span><b>PSG<br />TEAM SET</b><i>25/26</i></article>
+        </div>
+      </section>
+      <section class="catalogue" id="collections">
+        <div class="section-heading"><div><p class="eyebrow">Checklists officielles</p><h2>Les extensions Football</h2></div><p>Les PDF Topps servent de source<br />à chaque fiche et à l’index joueurs.</p></div>
+        <div class="toolbar"><div class="chips"><button class="chip is-selected" type="button">Football <span id="collection-count">4</span></button></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Rechercher une extension" /></label></div>
+        <div id="collection-grid" class="collection-grid"></div>
+      </section>
+      <section class="player-index" id="joueurs">
+        <div class="section-heading"><div><p class="eyebrow">Index transversal</p><h2>Les joueurs</h2></div><p>Un clic affiche les extensions,<br />les sous-ensembles et les références.</p></div>
+        <div class="player-controls"><label class="sort-label">Trier par <select id="player-sort"><option value="rarity">Rareté maximale</option><option value="name">Nom du joueur</option><option value="extensions">Nombre d’extensions</option></select></label><button id="player-fullscreen" class="button button-outline" type="button">Plein écran <span>↗</span></button></div>
+        <label class="player-search"><span>⌕</span><input id="player-search" type="search" placeholder="Rechercher un joueur : Haaland, Dembélé…" autocomplete="off" /></label>
+        <p id="player-status" class="player-status">Chargement des checklists officielles…</p>
+        <div id="player-list" class="player-list" aria-live="polite"></div>
+      </section>
+      <section class="featured" id="nouveautes"><div class="featured-copy"><p class="eyebrow">Focus checklist</p><h2>Topps Finest<br /><em>Premier League 2026</em></h2><p>Une checklist officielle de 300 cartes de base, complétée par les inserts et autographes référencés dans l’index.</p><dl><div><dt>300</dt><dd>cartes de base</dd></div><div><dt>16</dt><dd>pages officielles</dd></div><div><dt>1 clic</dt><dd>pour tout retrouver</dd></div></dl><button class="button button-light" type="button" data-open="finest-pl-2026">Voir la fiche collection <span>→</span></button></div><div class="feature-art"><div class="feature-card"><small>TOPPS</small><strong>FINEST</strong><b>PREMIER<br />LEAGUE</b><i>2026</i></div><div class="orb orb-one"></div><div class="orb orb-two"></div></div></section>
+      <section class="guide" id="guide"><p class="eyebrow">Bien démarrer</p><h2>Collectionner sans se perdre.</h2><div class="guide-grid"><article><span>01</span><h3>Choisir son terrain</h3><p>Une extension, un club ou un joueur : commencez par ce qui vous fait vibrer.</p></article><article><span>02</span><h3>Lire la checklist</h3><p>Chaque fiche renvoie vers le PDF Topps officiel pour vérifier chaque référence.</p></article><article><span>03</span><h3>Suivre ses joueurs</h3><p>Utilisez l’index pour comparer instantanément les extensions dans lesquelles apparaît un joueur.</p></article></div></section>
+    </main>
+    <footer><a class="brand" href="#top"><span class="brand-mark">C</span><span>Card<span>Index</span></span></a><span>Un projet pour les collectionneurs, par des collectionneurs.</span><span>© 2026 CardIndex</span></footer>
+    <dialog id="collection-dialog"><button class="close" aria-label="Fermer">×</button><div id="dialog-content"></div></dialog>
+    <script src="app.js"></script>
+  </body>
+</html>

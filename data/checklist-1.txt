@@ -1,0 +1,132 @@
+FIRST TEAM
+1 Lucas Chevalier Paris Saint-Germain
+2 Achraf Hakimi Paris Saint-Germain
+3 Marquinhos Paris Saint-Germain
+4 Lucas Beraldo Paris Saint-Germain
+5 Noham Kamara Paris Saint-Germain Rookie
+6 Ilya Zabarnyi Paris Saint-Germain
+7 Nuno Mendes Paris Saint-Germain
+8 João Neves Paris Saint-Germain
+9 Warren Zaïre-Emery Paris Saint-Germain
+10 Vitinha Paris Saint-Germain
+11 Fabián Ruiz Paris Saint-Germain
+12 Senny Mayulu Paris Saint-Germain
+13 Kang-in Lee Paris Saint-Germain
+14 Mathis Jangeal Paris Saint-Germain Rookie
+15 Quentin Ndjantou Paris Saint-Germain Rookie
+16 Désiré Doué Paris Saint-Germain
+17 Bradley Barcola Paris Saint-Germain
+18 Ousmane Dembélé Paris Saint-Germain
+19 Gonçalo Ramos Paris Saint-Germain
+20 Khvicha Kvaratskhelia Paris Saint-Germain
+BONAFIDE BALLER
+21 Neymar Jr. Paris Saint-Germain
+22 Ronaldinho Paris Saint-Germain
+23 Lionel Messi Paris Saint-Germain
+24 Ousmane Dembélé Paris Saint-Germain
+25 Khvicha Kvaratskhelia Paris Saint-Germain
+26 Désiré Doué Paris Saint-Germain
+PITCH PURSUITS
+27 Raí Paris Saint-Germain
+28 Jay-Jay Okocha Paris Saint-Germain
+29 Senny Mayulu Paris Saint-Germain
+30 Kang-in Lee Paris Saint-Germain
+31 Ángel Di María Paris Saint-Germain
+32 Ronaldinho Paris Saint-Germain
+33 Désiré Doué Paris Saint-Germain
+34 Bradley Barcola Paris Saint-Germain
+35 Ousmane Dembélé Paris Saint-Germain
+COLLECTORS CORNER
+36 Achraf Hakimi Paris Saint-Germain
+37 Kang-in Lee Paris Saint-Germain
+38 Ousmane Dembélé Paris Saint-Germain
+39 Khvicha Kvaratskhelia Paris Saint-Germain
+40 Lionel Messi Paris Saint-Germain
+FOUR FOR FOUR
+41 Marquinhos Paris Saint-Germain
+42 Achraf Hakimi Paris Saint-Germain
+43 Thiago Silva Paris Saint-Germain
+44 Lucas Hernández Paris Saint-Germain
+45 Presnel Kimpembe Paris Saint-Germain
+46 Warren Zaïre-Emery Paris Saint-Germain
+47 Vitinha Paris Saint-Germain
+48 Zlatan Ibrahimović Paris Saint-Germain
+49 Edinson Cavani Paris Saint-Germain
+50 Neymar Jr. Paris Saint-Germain
+RAINBOW FLICK
+RF-1 Achraf Hakimi Paris Saint-Germain
+RF-2 Nuno Mendes Paris Saint-Germain
+RF-3 Mathis Jangeal Paris Saint-Germain Rookie
+RF-4 Jay-Jay Okocha Paris Saint-Germain
+RF-5 João Neves Paris Saint-Germain
+RF-6 Warren Zaïre-Emery Paris Saint-Germain
+RF-7 Vitinha Paris Saint-Germain
+RF-8 Senny Mayulu Paris Saint-Germain
+RF-9 Kang-in Lee Paris Saint-Germain
+RF-10 Quentin Ndjantou Paris Saint-Germain Rookie
+RF-11 Ezequiel Lavezzi Paris Saint-Germain
+RF-12 Pauleta Paris Saint-Germain
+RF-13 Ludovic Giuly Paris Saint-Germain
+RF-14 Désiré Doué Paris Saint-Germain
+RF-15 Bradley Barcola Paris Saint-Germain
+RF-16 Ousmane Dembélé Paris Saint-Germain
+RF-17 Gonçalo Ramos Paris Saint-Germain
+RF-18 Khvicha Kvaratskhelia Paris Saint-Germain
+RF-19 George Weah Paris Saint-Germain
+RF-20 Edinson Cavani Paris Saint-Germain
+RF-21 Ángel Di María Paris Saint-Germain
+RF-22 Lionel Messi Paris Saint-Germain
+RF-23 Neymar Jr. Paris Saint-Germain
+RF-24 Zlatan Ibrahimović Paris Saint-Germain
+RF-25 Ronaldinho Paris Saint-Germain
+BASE CARDS AUTOGRAPH VARIATION
+BA-BB Bradley Barcola Paris Saint-Germain
+BA-BM Blaise Matuidi Paris Saint-Germain
+BA-DD Désiré Doué Paris Saint-Germain
+BA-DL David Luiz Paris Saint-Germain
+BA-GB Gianluigi Buffon Paris Saint-Germain
+BA-GR Gonçalo Ramos Paris Saint-Germain
+BA-IM Ibrahim Mbaye Paris Saint-Germain
+BA-IZ Ilya Zabarnyi Paris Saint-Germain
+BA-JN João Neves Paris Saint-Germain
+BA-KI Presnel Kimpembe Paris Saint-Germain
+BA-KK Khvicha Kvaratskhelia Paris Saint-Germain
+BA-KL Kang-in Lee Paris Saint-Germain
+BA-LB Lucas Beraldo Paris Saint-Germain
+BA-LC Lucas Chevalier Paris Saint-Germain
+BA-LE Luis Enrique Paris Saint-Germain
+BA-LG Ludovic Giuly Paris Saint-Germain
+BA-NA Nicolas Anelka Paris Saint-Germain
+BA-NK Noham Kamara Paris Saint-Germain Rookie
+BA-OD Ousmane Dembélé Paris Saint-Germain
+BA-QN Quentin Ndjantou Paris Saint-Germain Rookie
+BA-RS Raí Paris Saint-Germain
+BA-SM Senny Mayulu Paris Saint-Germain
+BA-VI Vitinha Paris Saint-Germain
+BA-WP Willian Pacho Paris Saint-Germain
+BA-WZ Warren Zaïre-Emery Paris Saint-Germain
+BONAFIDE BALLER AUTOGRAPH VARIATION
+BB-AD Ángel Di María Paris Saint-Germain
+BB-BB Bradley Barcola Paris Saint-Germain
+BB-CM Claude Makélélé Paris Saint-Germain
+BB-DD Désiré Doué Paris Saint-Germain
+BB-EC Edinson Cavani Paris Saint-Germain
+BB-FR Fabián Ruiz Paris Saint-Germain
+BB-GR Gonçalo Ramos Paris Saint-Germain
+BB-GW George Weah Paris Saint-Germain
+BB-IM Ibrahim Mbaye Paris Saint-Germain
+BB-JN João Neves Paris Saint-Germain
+BB-JO Jay-Jay Okocha Paris Saint-Germain
+BB-KK Khvicha Kvaratskhelia Paris Saint-Germain
+BB-KL Kang-in Lee Paris Saint-Germain
+BB-LH Lucas Hernández Paris Saint-Germain
+BB-LM Lionel Messi Paris Saint-Germain
+BB-NJ Neymar Jr. Paris Saint-Germain
+BB-NM Nuno Mendes Paris Saint-Germain
+BB-OD Ousmane Dembélé Paris Saint-Germain
+BB-PA Pauleta Paris Saint-Germain
+BB-SM Senny Mayulu Paris Saint-Germain
+BB-TS Thiago Silva Paris Saint-Germain
+BB-VI Vitinha Paris Saint-Germain
+BB-WZ Warren Zaïre-Emery Paris Saint-Germain
+BB-ZI Zlatan Ibrahimović Paris Saint-Germain

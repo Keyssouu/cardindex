@@ -1,0 +1,795 @@
+BASE
+BASE COMMON
+1Antoine Semenyo AFC Bournemouth
+2Julio Soler AFC Bournemouth Rookie
+3Eli Junior Kroupi AFC Bournemouth
+4Amine Adli AFC Bournemouth
+5Leandro Trossard Arsenal
+6Jurriën Timber Arsenal
+7Riccardo Calafiori Arsenal
+8Noni Madueke Arsenal
+9Ben Broggio Aston Villa Rookie
+10Rory Wilson Aston Villa Rookie
+11Jamaldeen Jimoh-Aloba Aston Villa Rookie
+12Mikkel Damsgaard Brentford
+13Kevin Schade Brentford
+14Michael Kayode Brentford
+15Dango Ouattara Brentford
+16Tom Watson Brighton & Hove Albion Rookie
+17Kaoru Mitoma Brighton & Hove Albion
+18Yasin Ayari Brighton & Hove Albion Rookie
+19Harry Howell Brighton & Hove Albion Rookie
+20Jaidon Anthony Burnley FC
+21Lyle Foster Burnley FC
+22Lesley Ugochukwu Burnley FC
+23Jaydon Banel Burnley FC Rookie
+24Bashir Humphreys Burnley FC Rookie
+25Zian Flemming Burnley FC Rookie
+26Kyle Walker Burnley FC
+27Josh Laurent Burnley FC Rookie
+28Estêvão Willian Chelsea Rookie
+29Cole Palmer Chelsea
+30Josh Acheampong Chelsea
+31Shumaira Mheuka Chelsea Rookie
+32Harrison Murray-CampbellChelsea Rookie
+33Romain Esse Crystal Palace Rookie
+34Zach Marsh Crystal Palace Rookie
+35Max Dowman Arsenal Rookie
+36Justin Devenny Crystal Palace Rookie
+37Yéremy Pino Crystal Palace
+38Jack Grealish Everton
+39Kiernan Dewsbury-Hall Everton
+40Tyler Dibling Everton
+41Roman Dixon Everton Rookie
+42Charly Alcaraz Everton
+43Jonah Kusi-Asare Fulham Rookie
+44Samuel Chukwueze Fulham
+45Kevin Fulham
+46Josh King Fulham Rookie
+47Gabriel Gudmundsson Leeds United
+Checklists provided by Topps reflect the intended configuration of that 
+product at the time of production, but actual contents and odds  may vary.
+48Noah Okafor Leeds United
+49Anton Stach Leeds United
+50Dominic Calvert-Lewin Leeds United
+51Harry Gray Leeds United Rookie
+52Alfie Cresswell Leeds United Rookie
+53Sean Longstaff Leeds United
+54Virgil van Dijk Liverpool FC
+55Rio Ngumoha Liverpool FC Rookie
+56Mohamed Salah Liverpool FC
+57Alexander Isak Liverpool FC
+58Hugo Ekitike Liverpool FC
+59Trent Koné-Doherty Liverpool FC Rookie
+60Giovanni Leoni Liverpool FC Rookie
+61Erling Haaland Manchester City
+62Rayan Cherki Manchester City
+63Rodri Manchester City
+64Tijjani Reijnders Manchester City
+65Divine Mukasa Manchester City Rookie
+66Gianluigi Donnarumma Manchester City
+67Benjamin Šeško Manchester United
+68Matheus Cunha Manchester United
+69Amir Ibragimov Manchester United Rookie
+70Bruno Fernandes Manchester United
+71Bendito Mantato Manchester United Rookie
+72Joelinton Newcastle United
+73Sandro Tonali Newcastle United
+74Bruno Guimarães Newcastle United
+75Anthony Gordon Newcastle United
+76Seung-Soo Park Newcastle United Rookie
+77Nick Woltemade Newcastle United
+78Morgan Gibbs-White Nottingham Forest
+79James McAtee Nottingham Forest
+80Igor Jesus Nottingham Forest Rookie
+81Zach Abbott Nottingham Forest Rookie
+82Jair Nottingham Forest Rookie
+83Chris Rigg Sunderland Rookie
+84Noah Sadiki Sunderland Rookie
+85Eliezer Mayenda Sunderland Rookie
+86Wilson Isidor Sunderland Rookie
+87Simon Adingra Sunderland
+88Lucas Bergvall Tottenham Hotspur
+89Djed Spence Tottenham Hotspur
+90João Palhinha Tottenham Hotspur
+91Xavi Simons Tottenham Hotspur
+92Kōta Takai Tottenham Hotspur Rookie
+93Crysencio Summerville West Ham United
+94Lucas Paquetá West Ham United
+95El Hadji Malick Diouf West Ham United Rookie
+96Freddie Potts West Ham United Rookie
+97Callum Marshall West Ham United
+98Fer López Wolverhampton WanderersRookie
+99Enso González Wolverhampton WanderersRookie
+100Wesley Okoduwa Wolverhampton WanderersRookie
+BASE UNCOMMON
+101Antoine Semenyo AFC Bournemouth
+102Justin Kluivert AFC Bournemouth
+103Tyler Adams AFC Bournemouth
+104Eli Junior Kroupi AFC Bournemouth
+105Evanilson AFC Bournemouth
+106Bukayo Saka Arsenal
+107Gabriel Magalhães Arsenal
+108Max Dowman Arsenal Rookie
+109Viktor Gyökeres Arsenal
+110Jaydee Canvot Crystal Palace Rookie
+111Cristhian Mosquera Arsenal
+112William Saliba Arsenal
+113Piero Hincapié Arsenal
+114Igor Thiago Brentford
+115Ollie Watkins Aston Villa
+116Ben Broggio Aston Villa Rookie
+117Morgan Rogers Aston Villa
+118Youri Tielemans Aston Villa
+119John McGinn Aston Villa
+120Jamaldeen Jimoh-Aloba Aston Villa Rookie
+121Jair Nottingham Forest Rookie
+122Mikkel Damsgaard Brentford
+123Dango Ouattara Brentford
+124Gustavo Nunes Brentford Rookie
+125Nathan Collins Brentford
+126Romelle Donovan Brentford Rookie
+127Jordan Henderson Brentford
+128Antoni Milambo Brentford
+129Kaoru Mitoma Brighton & Hove Albion
+130Stefanos Tzimas Brighton & Hove Albion Rookie
+131Brajan Gruda Brighton & Hove Albion
+132Yasin Ayari Brighton & Hove Albion Rookie
+133Yankuba Minteh Brighton & Hove Albion
+134Josh Laurent Burnley FC Rookie
+135Estêvão Willian Chelsea Rookie
+136Cole Palmer Chelsea
+137Moisés Caicedo Chelsea
+138Enzo Fernández Chelsea
+139Alejandro Garnacho Chelsea
+140Jean-Philippe Mateta Crystal Palace
+141Christantus Uche Crystal Palace
+142Yéremy Pino Crystal Palace
+143Jack Grealish Everton
+144Charly Alcaraz Everton
+145Iliman Ndiaye Everton
+146Dwight McNeil Everton
+147Jarrad Branthwaite Everton
+148Thierno Barry Everton
+149Emile Smith Rowe Fulham
+150Kevin Fulham
+151Josh King Fulham Rookie
+152Raúl Jiménez Fulham
+153Brenden Aaronson Leeds United
+154Alexander Isak Liverpool FC
+155Rio Ngumoha Liverpool FC Rookie
+156Mohamed Salah Liverpool FC
+157Virgil van Dijk Liverpool FC
+158Florian Wirtz Liverpool FC
+159Hugo Ekitike Liverpool FC
+160Erling Haaland Manchester City
+161Rayan Cherki Manchester City
+162Rodri Manchester City
+163Omar Marmoush Manchester City
+164Tijjani Reijnders Manchester City
+165Divine Mukasa Manchester City Rookie
+166Reigan Heskey Manchester City Rookie
+167Phil Foden Manchester City
+168Benjamin Šeško Manchester United
+169Bryan Mbeumo Manchester United
+170Matheus Cunha Manchester United
+171Bruno Fernandes Manchester United
+172Shea Lacey Manchester United Rookie
+173Fabian Schär Newcastle United
+174Bruno Guimarães Newcastle United
+175Anthony Gordon Newcastle United
+176Nick Woltemade Newcastle United
+177Morgan Gibbs-White Nottingham Forest
+178James McAtee Nottingham Forest
+179Chris Rigg Sunderland Rookie
+180Granit Xhaka Sunderland
+181Noah Sadiki Sunderland Rookie
+182Eliezer Mayenda Sunderland Rookie
+183Enzo Le Fée Sunderland
+184Simon Adingra Sunderland
+185Wilson Odobert Tottenham Hotspur
+186Pape Matar Sarr Tottenham Hotspur
+187Pedro Porro Tottenham Hotspur
+188Xavi Simons Tottenham Hotspur
+189Mohammed Kudus Tottenham Hotspur
+190Crysencio Summerville West Ham United
+191Lucas Paquetá West Ham United
+192El Hadji Malick Diouf West Ham United Rookie
+193Freddie Potts West Ham United Rookie
+194Luis Guilherme West Ham United Rookie
+195Ollie Scarles West Ham United
+196Jørgen Strand Larsen Wolverhampton Wanderers
+197André Wolverhampton Wanderers
+198João Gomes Wolverhampton Wanderers
+199Jhon Arias Wolverhampton Wanderers
+200Tolu Arokodare Wolverhampton WanderersRookie
+BASE RARE
+201Antoine Semenyo AFC Bournemouth
+202Amine Adli AFC Bournemouth
+203Tyler Adams AFC Bournemouth
+204Eli Junior Kroupi AFC Bournemouth
+205Evanilson AFC Bournemouth
+206Veljko Milosavljević AFC Bournemouth Rookie
+207Bukayo Saka Arsenal
+208Viktor Gyökeres Arsenal
+209Maxim De Cuyper Brighton & Hove Albion Rookie
+210Martin Ødegaard Arsenal
+211Martín Zubimendi Arsenal
+212Declan Rice Arsenal
+213Max Dowman Arsenal Rookie
+214Myles Lewis-Skelly Arsenal
+215Jamaldeen Jimoh-Aloba Aston Villa Rookie
+216Morgan Rogers Aston Villa
+217Ollie Watkins Aston Villa
+218Youri Tielemans Aston Villa
+219Kevin Schade Brentford
+220Dango Ouattara Brentford
+221Romelle Donovan Brentford Rookie
+222Kaoru Mitoma Brighton & Hove Albion
+223Harry Howell Brighton & Hove Albion Rookie
+224Brajan Gruda Brighton & Hove Albion
+225Stefanos Tzimas Brighton & Hove Albion Rookie
+226Yasin Ayari Brighton & Hove Albion Rookie
+227Tom Watson Brighton & Hove Albion Rookie
+228Quilindschy Hartman Burnley FC
+229Estêvão Willian Chelsea Rookie
+230Cole Palmer Chelsea
+231Moisés Caicedo Chelsea
+232Enzo Fernández Chelsea
+233Jorrel Hato Chelsea
+234Liam Delap Chelsea
+235João Pedro Chelsea
+236Adam Wharton Crystal Palace
+237Jean-Philippe Mateta Crystal Palace
+238Chris Richards Crystal Palace
+239Daichi Kamada Crystal Palace
+240Daniel Muñoz Crystal Palace
+241Yéremy Pino Crystal Palace
+242Christantus Uche Crystal Palace
+243Jack Grealish Everton
+244Tyler Dibling Everton
+245Charly Alcaraz Everton
+246Iliman Ndiaye Everton
+247Thierno Barry Everton
+248Emile Smith Rowe Fulham
+249Raúl Jiménez Fulham
+250Alex Iwobi Fulham
+251Rodrigo Muniz Fulham
+252Adama Traoré Fulham
+253Reggie Walsh Chelsea Rookie
+254Harry Gray Leeds United Rookie
+255Ao Tanaka Leeds United
+256Jayden Bogle Leeds United
+257Rio Ngumoha Liverpool FC Rookie
+258Mohamed Salah Liverpool FC
+259Virgil van Dijk Liverpool FC
+260Florian Wirtz Liverpool FC
+261Hugo Ekitiké Liverpool FC
+262Alexis Mac Allister Liverpool FC
+263Alexander Isak Liverpool FC
+264Erling Haaland Manchester City
+265Rodri Manchester City
+266Omar Marmoush Manchester City
+267Tijjani Reijnders Manchester City
+268Phil Foden Manchester City
+269Benjamin Šeško Manchester United
+270Bryan Mbeumo Manchester United
+271Amir Ibragimov Manchester United Rookie
+272Matheus Cunha Manchester United
+273Bruno Fernandes Manchester United
+274Shea Lacey Manchester United Rookie
+275Bruno Guimarães Newcastle United
+276Anthony Gordon Newcastle United
+277Joelinton Newcastle United
+278Sandro Tonali Newcastle United
+279Seung-Soo Park Newcastle United Rookie
+280Anthony Elanga Newcastle United
+281James McAtee Nottingham Forest
+282Igor Jesus Nottingham Forest Rookie
+283Callum Hudson-Odoi Nottingham Forest
+284Morgan Gibbs-White Nottingham Forest
+285Murillo Nottingham Forest
+286Chris Rigg Sunderland Rookie
+287Eliezer Mayenda Sunderland Rookie
+288Xavi Simons Tottenham Hotspur
+289Mohammed Kudus Tottenham Hotspur
+290Dominic Solanke Tottenham Hotspur
+291Archie Gray Tottenham Hotspur
+292Lucas Bergvall Tottenham Hotspur
+293Micky van de Ven Tottenham Hotspur
+294Lucas Paquetá West Ham United
+295Jarrod Bowen West Ham United
+296João Gomes Wolverhampton Wanderers
+297André Wolverhampton Wanderers
+298Jørgen Strand Larsen Wolverhampton Wanderers
+299Jhon Arias Wolverhampton Wanderers
+300Enso González Wolverhampton WanderersRookie
+INSERT
+(xB) EXPECTED BRILLIANCE
+XB-1 Evanilson AFC Bournemouth
+XB-2 Antoine Semenyo AFC Bournemouth
+XB-3 Eberechi Eze Arsenal
+XB-4 Viktor Gyökeres Arsenal
+XB-5 Ollie Watkins Aston Villa
+XB-6 Harvey Elliott Aston Villa
+XB-7 Dango Ouattara Brentford
+XB-8 Mikkel Damsgaard Brentford
+XB-9 Charalampos Kostoulas Brighton & Hove Albion
+XB-10 Stefanos Tzimas Brighton & Hove Albion Rookie
+XB-11 Armando Broja Burnley FC
+XB-12 Jaidon Anthony Burnley FC
+XB-13 Facundo Buonanotte Chelsea
+XB-14 João Pedro Chelsea
+XB-15 Jean-Philippe Mateta Crystal Palace
+XB-16 Yéremy Pino Crystal Palace
+XB-17 Charly Alcaraz Everton
+XB-18 Thierno Barry Everton
+XB-19 Jonah Kusi-Asare Fulham Rookie
+XB-20 Kevin Fulham
+XB-21 Harry Gray Leeds United Rookie
+XB-22 Wilfried Gnonto Leeds United
+XB-23 Alexander Isak Liverpool FC
+XB-24 Hugo Ekitike Liverpool FC
+XB-25 Erling Haaland Manchester City
+XB-26 Omar Marmoush Manchester City
+XB-27 Bryan Mbeumo Manchester United
+XB-28 Matheus Cunha Manchester United
+XB-29 Nick Woltemade Newcastle United
+XB-30 Sandro Tonali Newcastle United
+XB-31 Chris Wood Nottingham Forest
+XB-32 Arnaud Kalimuendo Nottingham Forest
+XB-33 Eliezer Mayenda Sunderland Rookie
+XB-34 Habib Diarra Sunderland
+XB-35 Xavi Simons Tottenham Hotspur
+XB-36 Randal Kolo Muani Tottenham Hotspur
+XB-37 El Hadji Malick Diouf West Ham United Rookie
+XB-38 Mateus Fernandes West Ham United
+XB-39 Tolu Arokodare Wolverhampton WanderersRookie
+XB-40 Fer López Wolverhampton WanderersRookie
+SWERVE
+SV-1 Justin Kluivert AFC Bournemouth
+SV-2 Amine Adli AFC Bournemouth
+SV-3 Max Dowman Arsenal Rookie
+SV-4 Ethan Nwaneri Arsenal
+SV-5 Morgan Rogers Aston Villa
+SV-6 Youri Tielemans Aston Villa
+SV-7 Antoni Milambo Brentford
+SV-8 Romelle Donovan Brentford Rookie
+SV-9 Yasin Ayari Brighton & Hove Albion Rookie
+SV-10 Brajan Gruda Brighton & Hove Albion
+SV-11 Lesley Ugochukwu Burnley FC
+SV-12 Quilindschy Hartman Burnley FC
+SV-13 Dário Essugo Chelsea
+SV-14 Alejandro Garnacho Chelsea
+SV-15 Ismaïla Sarr Crystal Palace
+SV-16 Romain Esse Crystal Palace Rookie
+SV-17 Kiernan Dewsbury-Hall Everton
+SV-18 Tyler Dibling Everton
+SV-19 Josh King Fulham Rookie
+SV-20 Emile Smith Rowe Fulham
+SV-21 Brenden Aaronson Leeds United
+SV-22 Ao Tanaka Leeds United
+SV-23 Alexis Mac Allister Liverpool FC
+SV-24 Rio Ngumoha Liverpool FC Rookie
+SV-25 Tijjani Reijnders Manchester City
+SV-26 Jérémy Doku Manchester City
+SV-27 Bruno Fernandes Manchester United
+SV-28 Benjamin Šeško Manchester United
+SV-29 Sandro Tonali Newcastle United
+SV-30 Tino Livramento Newcastle United
+SV-31 Arnaud Kalimuendo Nottingham Forest
+SV-32 Ryan Yates Nottingham Forest
+SV-33 Granit Xhaka Sunderland
+SV-34 Enzo Le Fée Sunderland
+SV-35 João Palhinha Tottenham Hotspur
+SV-36 Lucas Bergvall Tottenham Hotspur
+SV-37 Lucas Paquetá West Ham United
+SV-38 Luis Guilherme West Ham United Rookie
+SV-39 Jhon Arias Wolverhampton Wanderers
+SV-40 João Gomes Wolverhampton Wanderers
+ARRIVALS
+AV-1 Chris Rigg Sunderland Rookie
+AV-2 Josh King Fulham Rookie
+AV-3 Reggie Walsh Chelsea Rookie
+AV-4 Shea Lacey Manchester United Rookie
+AV-5 Harry Gray Leeds United Rookie
+AV-6 Max Dowman Arsenal Rookie
+AV-7 Rio Ngumoha Liverpool FC Rookie
+AV-8 Jaydee Canvot Crystal Palace Rookie
+AV-9 Tom Watson Brighton & Hove Albion Rookie
+AV-10 Estêvão Willian Chelsea Rookie
+CLEAN
+CN-1 Virgil van Dijk Liverpool FC
+CN-2 Riccardo Calafiori Arsenal
+CN-3 David Raya Arsenal
+CN-4 Dan Burn Newcastle United
+CN-5 Micky van de Ven Tottenham Hotspur
+CN-6 Jorrel Hato Chelsea
+CN-7 Nathan Collins Brentford
+CN-8 Murillo Nottingham Forest
+CN-9 Gianluigi Donnarumma Manchester City
+CN-10 Lewis Dunk Brighton & Hove Albion
+SWERVE FUSION VARIATION
+FV-1 Justin Kluivert AFC Bournemouth
+FV-2 Amine Adli AFC Bournemouth
+FV-3 Max Dowman Arsenal Rookie
+FV-4 Ethan Nwaneri Arsenal
+FV-5 Morgan Rogers Aston Villa
+FV-6 Youri Tielemans Aston Villa
+FV-7 Antoni Milambo Brentford
+FV-8 Romelle Donovan Brentford Rookie
+FV-9 Yasin Ayari Brighton & Hove Albion Rookie
+FV-10 Brajan Gruda Brighton & Hove Albion
+FV-11 Lesley Ugochukwu Burnley FC
+FV-12 Quilindschy Hartman Burnley FC
+FV-13 Dário Essugo Chelsea
+FV-14 Alejandro Garnacho Chelsea
+FV-15 Ismaïla Sarr Crystal Palace
+FV-16 Romain Esse Crystal Palace Rookie
+FV-17 Kiernan Dewsbury-Hall Everton
+FV-18 Tyler Dibling Everton
+FV-19 Josh King Fulham Rookie
+FV-20 Emile Smith Rowe Fulham
+FV-21 Brenden Aaronson Leeds United
+FV-22 Ao Tanaka Leeds United
+FV-23 Alexis Mac Allister Liverpool FC
+FV-24 Rio Ngumoha Liverpool FC Rookie
+FV-25 Tijjani Reijnders Manchester City
+FV-26 Jérémy Doku Manchester City
+FV-27 Bruno Fernandes Manchester United
+FV-28 Benjamin Šeško Manchester United
+FV-29 Sandro Tonali Newcastle United
+FV-30 Tino Livramento Newcastle United
+FV-31 Arnaud Kalimuendo Nottingham Forest
+FV-32 Ryan Yates Nottingham Forest
+FV-33 Granit Xhaka Sunderland
+FV-34 Enzo Le Fée Sunderland
+FV-35 João Palhinha Tottenham Hotspur
+FV-36 Lucas Bergvall Tottenham Hotspur
+FV-37 Lucas Paquetá West Ham United
+FV-38 Luis Guilherme West Ham United Rookie
+FV-39 Jhon Arias Wolverhampton Wanderers
+FV-40 João Gomes Wolverhampton Wanderers
+GUSTO
+GO-1 Kai Havertz Arsenal
+GO-2 Benjamin Šeško Manchester United
+GO-3 Jarrod Bowen West Ham United
+GO-4 Diego León Manchester United Rookie
+GO-5 Heung-Min Son Tottenham Hotspur
+GO-6 Martín Zubimendi Arsenal
+GO-7 Yaya Touré Manchester City
+GO-8 Shea Lacey Manchester United Rookie
+GO-9 Anthony Gordon Newcastle United
+GO-10 Declan Rice Arsenal
+GO-11 Alexis Mac Allister Liverpool FC
+GO-12 Hugo Ekitike Liverpool FC
+GO-13 Dominik Szoboszlai Liverpool FC
+GO-14 Mohammed Kudus Tottenham Hotspur
+GO-15 Bruno Guimarães Newcastle United
+GO-16 Chris Rigg Sunderland Rookie
+GO-17 Enzo Fernández Chelsea
+GO-18 João Pedro Chelsea
+GO-19 Malo Gusto Chelsea
+GO-20 Divine Mukasa Manchester City Rookie
+NIGHTMARE FUEL
+NF-1 Benjamin Šeško Manchester United
+NF-2 Mohamed Salah Liverpool FC
+NF-3 Viktor Gyökeres Arsenal
+NF-4 Carlos Tevez Manchester City
+NF-5 Estêvão Willian Chelsea Rookie
+NF-6 Rio Ngumoha Liverpool FC Rookie
+NF-7 Wayne Rooney Manchester United
+NF-8 Harry Kane Tottenham Hotspur
+NF-9 Fernando Torres Liverpool FC
+NF-10 Dennis Bergkamp Arsenal
+NF-11 Erling Haaland Manchester City
+NF-12 Didier Drogba Chelsea
+NF-13 Robbie Fowler Liverpool FC
+NF-14 Eric Cantona Manchester United
+NF-15 Bukayo Saka Arsenal
+NF-16 Alexander Isak Liverpool FC
+NF-17 Sergio Agüero Manchester City
+NF-18 Thierry Henry Arsenal
+NF-19 Ian Wright Arsenal
+NF-20 Alan Shearer Newcastle United
+MAIN ATTRACTION
+MA-1 Antoine Semenyo AFC Bournemouth
+MA-2 Florian Wirtz Liverpool FC
+MA-3 Rodri Manchester City
+MA-4 Cole Palmer Chelsea
+MA-5 Gareth Bale Tottenham Hotspur
+MA-6 Martín Zubimendi Arsenal
+MA-7 Mohamed Salah Liverpool FC
+MA-8 Matheus Cunha Manchester United
+MA-9 Bruno Fernandes Manchester United
+MA-10 Kaoru Mitoma Brighton & Hove Albion
+MA-11 David Silva Manchester City
+MA-12 Ethan Nwaneri Arsenal
+MA-13 Virgil van Dijk Liverpool FC
+MA-14 Andy Cole Manchester United
+MA-15 Morgan Rogers Aston Villa
+MA-16 Estêvão Willian Chelsea Rookie
+MA-17 Moisés Caicedo Chelsea
+MA-18 Carlos Tevez Manchester City
+MA-19 Kevin Fulham
+MA-20 Luka Modrić Tottenham Hotspur
+POLKA
+PK-1 David Beckham Manchester United
+PK-2 Mohamed Salah Liverpool FC
+PK-3 Erling Haaland Manchester City
+PK-4 Rio Ngumoha Liverpool FC Rookie
+PK-5 Kevin De Bruyne Manchester City
+PK-6 Gareth Bale Tottenham Hotspur
+PK-7 Harry Kane Tottenham Hotspur
+PK-8 Bukayo Saka Arsenal
+PK-9 Eden Hazard Chelsea
+PK-10 Nick Woltemade Newcastle United
+PK-11 Heung-Min Son Tottenham Hotspur
+PK-12 Alan Shearer Newcastle United
+PK-13 Thierry Henry Arsenal
+PK-14 Wayne Rooney Manchester United
+PK-15 Max Dowman Arsenal Rookie
+PK-16 Frank Lampard Chelsea
+PK-17 Steven Gerrard Liverpool FC
+PK-18 Paul Scholes Manchester United
+PK-19 Dennis Bergkamp Arsenal
+PK-20 Sergio Agüero Manchester City
+HEADLINERS
+HS-1 Mohammed Kudus Tottenham Hotspur
+HS-2 Bruno Fernandes Manchester United
+HS-3 Phil Foden Manchester City
+HS-4 Martin Ødegaard Arsenal
+HS-5 Rodri Manchester City
+HS-6 Hugo Ekitike Liverpool FC
+HS-7 Declan Rice Arsenal
+HS-8 Anthony Gordon Newcastle United
+HS-9 Bryan Mbeumo Manchester United
+HS-10 Morgan Gibbs-White Nottingham Forest
+AURA
+AU-1 Mario Balotelli Manchester City
+AU-2 Gianfranco Zola Chelsea
+AU-3 Phil Foden Manchester City
+AU-4 Paul Gascoigne Everton
+AU-5 Jack Grealish Everton
+AU-6 Declan Rice Arsenal
+AU-7 Fernandinho Manchester City
+AU-8 Claude Makélélé Chelsea
+AU-9 Roy Keane Manchester United
+AU-10 William Saliba Arsenal
+AU-11 Bukayo Saka Arsenal
+AU-12 Wayne Rooney Manchester United
+AU-13 Alexander Isak Liverpool FC
+AU-14 Steven Gerrard Liverpool FC
+AU-15 Estêvão Willian Chelsea Rookie
+AU-16 Mohamed Salah Liverpool FC
+AU-17 Florian Wirtz Liverpool FC
+AU-18 Thierry Henry Arsenal
+AU-19 Harry Kane Tottenham Hotspur
+AU-20 Didier Drogba Chelsea
+FINEST IDOLS
+FI-1 Steven Gerrard Liverpool FC
+FI-2 Frank Lampard Chelsea
+FI-3 Sergio Agüero Manchester City
+FI-4 Harry Kane Tottenham Hotspur
+FI-5 Wayne Rooney Manchester United
+AUTOGRAPH
+FINEST AUTOGRAPHS
+FA-AC Alfie Cresswell Leeds United Rookie
+FA-AE Anthony Elanga Newcastle United
+FA-AG Archie Gray Tottenham Hotspur
+FA-AI Alexander Isak Liverpool FC
+FA-AN Anthony Gordon Newcastle United
+FA-AR Antonee Robinson Fulham
+FA-AY Ashley Young Aston Villa
+FA-BE Bendito Mantato Manchester United Rookie
+FA-BF Bruno Fernandes Manchester United
+FA-BG Brajan Gruda Brighton & Hove Albion
+FA-BM Bryan Mbeumo Manchester United
+FA-BO Jarrod Bowen West Ham United
+FA-BS Bukayo Saka Arsenal
+FA-CA Santi Cazorla Arsenal
+FA-CD Clint Dempsey Fulham
+FA-CG Cody Gakpo Liverpool FC
+FA-CH Callum Hudson-Odoi Nottingham Forest
+FA-CP Cole Palmer Chelsea
+FA-CR Chris Richards Crystal Palace
+FA-CW Chris Wood Nottingham Forest
+FA-DD Diogo Dalot Manchester United
+FA-DI Denis Irwin Manchester United
+FA-DK Dirk Kuyt Liverpool FC
+FA-DL David Luiz Chelsea
+FA-DM Divine Mukasa Manchester City Rookie
+FA-DO Dango Ouattara Brentford
+FA-DR Declan Rice Arsenal
+FA-DS Dominic Solanke Tottenham Hotspur
+FA-EA Emmanuel Adebayor Arsenal
+FA-EF Enzo Fernández Chelsea
+FA-EH Erling Haaland Manchester City
+FA-EM El Hadji Malick Diouf West Ham United Rookie
+FA-EN Ethan Nwaneri Arsenal
+FA-ES Emile Smith Rowe Fulham
+FA-EW Estêvão Willian Chelsea Rookie
+FA-GI Jamie Gittens Chelsea
+FA-GU Bruno Guimarães Newcastle United
+FA-GX Granit Xhaka Sunderland
+FA-HG Harry Gray Leeds United Rookie
+FA-IB Amir Ibragimov Manchester United Rookie
+FA-IN Iliman Ndiaye Everton
+FA-JB Jayden Bogle Leeds United
+FA-JG Jack Grealish Everton
+FA-JM John McGinn Aston Villa
+FA-JO João Palhinha Tottenham Hotspur
+FA-JR Jacob Ramsey Newcastle United
+FA-JS Jørgen Strand Larsen Wolverhampton Wanderers
+FA-JZ Joshua Zirkzee Manchester United
+FA-KS Kevin Schade Brentford
+FA-KW Kyle Walker Burnley FC
+FA-LD Liam Delap Chelsea
+FA-LP Lucas Paquetá West Ham United
+FA-LS Leroy Sané Manchester City
+FA-MC Moisés Caicedo Chelsea
+FA-MD Max Dowman Arsenal Rookie
+FA-MG Marc Guiu Chelsea
+FA-MI Milos Kerkez Liverpool FC
+FA-MK Mohammed Kudus Tottenham Hotspur
+FA-ML Myles Lewis-Skelly Arsenal
+FA-MS Mohamed Salah Liverpool FC
+FA-MZ Martín Zubimendi Arsenal
+FA-NC Nathan Collins Brentford
+FA-NM Noni Madueke Arsenal
+FA-NV Nemanja Vidić Manchester United
+FA-NW Nick Woltemade Newcastle United
+FA-OG Olivier Giroud Arsenal
+FA-OM Omar Marmoush Manchester City
+FA-OW Ollie Watkins Aston Villa
+FA-PE João Pedro Chelsea
+FA-PF Phil Foden Manchester City
+FA-PN Pedro Neto Chelsea
+FA-RG Chris Rigg Sunderland Rookie
+FA-RI John Arne Riise Liverpool FC
+FA-RM Riyad Mahrez Manchester City
+FA-RN Rio Ngumoha Liverpool FC Rookie
+FA-RW Reggie Walsh Chelsea Rookie
+FA-SA Simon Adingra Sunderland
+FA-SC Sol Campbell Arsenal
+FA-SL Shea Lacey Manchester United Rookie
+FA-SM Shumaira Mheuka Chelsea Rookie
+FA-TD Tyler Dibling Everton
+FA-TO Sandro Tonali Newcastle United
+FA-TR Tijjani Reijnders Manchester City
+FA-TW Tom Watson Brighton & Hove Albion Rookie
+FA-VD Virgil van Dijk Liverpool FC
+FA-VG Viktor Gyökeres Arsenal
+FA-WS William Saliba Arsenal
+FA-YA Yasin Ayari Brighton & Hove Albion Rookie
+FA-YY Yehor Yarmolyuk Brentford
+FINEST MOMENTS AUTOGRAPHS
+FM-AS Alan Shearer Newcastle United
+FM-AY Ashley Young Aston Villa
+FM-BM David Beckham Manchester United
+FM-CT Carlos Tevez West Ham United
+FM-DB Dennis Bergkamp Arsenal
+FM-DJ David James Manchester City
+FM-EH Erling Haaland Manchester City
+FM-HS Heung-Min Son Tottenham Hotspur
+FM-HZ Eden Hazard Chelsea
+FM-IW Ian Wright Arsenal
+FM-JH Jordan Henderson Sunderland
+FM-JM José Mourinho Chelsea
+FM-KK Kevin Keegan Newcastle United
+FM-LS Lee Sharpe Manchester United
+FM-ME Michael Essien Chelsea
+FM-OG Olivier Giroud Arsenal
+FM-PC Papiss Cissé Newcastle United
+FM-PG Pep Guardiola Manchester City
+FM-PV Patrick Vieira Arsenal
+FM-RK Roy Keane Manchester United
+FM-SA Sergio Agüero Manchester City
+FM-SB Steve Bruce Manchester United
+FM-TA Tony Adams Arsenal
+FM-WR Wayne Rooney Everton
+FINEST SEASONS 1995 96
+FS-AK Andrei Kanchelskis Everton
+FS-DJ David James Liverpool FC
+FS-DY Dwight Yorke Aston Villa
+FS-EC Eric Cantona Manchester United
+FS-GN Gary Neville Manchester United
+FS-IW Ian Wright Arsenal
+FS-LF Les Ferdinand Newcastle United
+FS-PS Peter Schmeichel Manchester United
+FS-RF Robbie Fowler Liverpool FC
+FS-RG Ruud Gullit Chelsea
+FS-RL Rob Lee Newcastle United
+FS-SC Stan Collymore Liverpool FC
+FS-SS Steve Stone Nottingham Forest
+FS-TA Tony Adams Arsenal
+FS-TS Teddy Sheringham Tottenham Hotspur
+FINEST PARTNERSHIPS
+FP-AS Darren Anderton Tottenham Hotspur
+Teddy Sheringham Tottenham Hotspur
+FP-CY Dwight Yorke Manchester United
+Andy Cole Manchester United
+FP-DK Robbie Keane Tottenham Hotspur
+Jermain Defoe Tottenham Hotspur
+FP-DL Didier Drogba Chelsea
+Frank Lampard Chelsea
+FP-GH Jimmy Floyd HasselbainkChelsea
+Eiður Guðjohnsen Chelsea
+FP-HB Thierry Henry Arsenal
+Dennis Bergkamp Arsenal
+FP-HP Thierry Henry Arsenal
+Robert Pirès Arsenal
+FP-KS Heung-Min Son Tottenham Hotspur
+Harry Kane Tottenham Hotspur
+FP-MS Gabriel Magalhães Arsenal
+William Saliba Arsenal
+FP-PQ Niall Quinn Sunderland
+Kevin Phillips Sunderland
+FP-SF Alan Shearer Newcastle United
+Les Ferdinand Newcastle United
+FP-SM Sadio Mané Liverpool FC
+Mohamed Salah Liverpool FC
+FP-SS Luis Suárez Liverpool FC
+Daniel Sturridge Liverpool FC
+FP-TC John Terry Chelsea
+Ricardo Carvalho Chelsea
+FP-ZP Gustavo Poyet Chelsea
+Gianfranco Zola Chelsea
+ARRIVALS AUTOGRAPH EDITION
+AA-AI Amir Ibragimov Manchester United Rookie
+AA-BB Ben Broggio Aston Villa Rookie
+AA-BM Bendito Mantato Manchester United Rookie
+AA-CR Chris Rigg Sunderland Rookie
+AA-EW Estêvão Willian Chelsea Rookie
+AA-JK Josh King Fulham Rookie
+AA-MD Max Dowman Arsenal Rookie
+AA-RD Romelle Donovan Brentford Rookie
+AA-RN Rio Ngumoha Liverpool FC Rookie
+AA-SL Shea Lacey Manchester United Rookie
+AA-TW Tom Watson Brighton & Hove Albion Rookie
+MAIN ATTRACTION AUTOGRAPH EDITION
+MA-AC Andy Cole Manchester United
+MA-BF Bruno Fernandes Manchester United
+MA-CP Cole Palmer Chelsea
+MA-CT Carlos Tevez Manchester City
+MA-DS David Silva Manchester City
+MA-EW Estêvão Willian Chelsea Rookie
+MA-GB Gareth Bale Tottenham Hotspur
+MA-JG Jack Grealish Everton
+MA-LM Luka Modrić Tottenham Hotspur
+MA-MC Matheus Cunha Manchester United
+MA-MO Moisés Caicedo Chelsea
+MA-MR Morgan Rogers Aston Villa
+MA-MS Mohamed Salah Liverpool FC
+MA-MZ Martín Zubimendi Arsenal
+MA-RO Rodri Manchester City
+MA-VD Virgil van Dijk Liverpool FC
+GUSTOGRAPHS
+GG-AG Anthony Gordon Newcastle United
+GG-BG Bruno Guimarães Newcastle United
+GG-BS Benjamin Šeško Manchester United
+GG-CR Chris Rigg Sunderland Rookie
+GG-DR Declan Rice Arsenal
+GG-DS Dominik Szoboszlai Liverpool FC
+GG-EF Enzo Fernández Chelsea
+GG-HE Hugo Ekitike Liverpool FC
+GG-JB Jarrod Bowen West Ham United
+GG-JP João Pedro Chelsea
+GG-KH Kai Havertz Arsenal
+GG-MK Mohammed Kudus Tottenham Hotspur
+GG-MZ Martín Zubimendi Arsenal
+GG-SL Shea Lacey Manchester United Rookie
+GG-TR Tijjani Reijnders Manchester City
+FINEST FANS
+FF-AH Anne Hathaway Arsenal
+FF-CT Charlize Theron
+FF-JM Joe Marler Brighton & Hove Albion
+FF-JS Jill Scott Sunderland
+FF-LBJ LeBron James Liverpool FC On-Card
+FF-LW Laura Woods Arsenal
+FF-MB Mel B Leeds United
+FF-MBB Millie Bobby Brown Liverpool FC
+FF-MC Mel C Liverpool FC
+FF-RI Ralph Ineson Leeds United
+FF-SB Stuart Broad Nottingham Forest
+FF-SLJ Samuel L. Jackson Liverpool FC
