@@ -14,6 +14,7 @@ const grid = document.querySelector('#collection-grid');
 const collectionSearch = document.querySelector('#search');
 const playerSearch = document.querySelector('#player-search');
 const playerSort = document.querySelector('#player-sort');
+const playerRarityFilter = document.querySelector('#player-rarity-filter');
 const playerFullscreen = document.querySelector('#player-fullscreen');
 const playerList = document.querySelector('#player-list');
 const playerStatus = document.querySelector('#player-status');
@@ -72,7 +73,8 @@ function categoryFor(entry) {
 function categoryRank(category) { return ({ AUTOGRAPH: 0, RELIC: 0, BASE: 1, INSERT: 2 })[category] ?? 3; }
 
 function stars(rarity) { return `<span class="stars" aria-label="Rareté : ${rarity.label}, ${rarity.stars} étoiles">${'★'.repeat(rarity.stars)}${'☆'.repeat(5 - rarity.stars)}</span>`; }
-function rarityBadge(entry) { const rarity = rarityFor(entry); return `<span class="rarity-badge rarity-${rarity.key}">${stars(rarity)} <em>${rarity.label}</em></span>`; }
+function rarityPill(rarity) { return `<span class="rarity-badge rarity-${rarity.key}">${stars(rarity)} <em>${rarity.label}</em></span>`; }
+function rarityBadge(entry) { return rarityPill(rarityFor(entry)); }
 function optionList(values, label) { return `<option value="">${label}</option>${[...values].sort((a, b) => a.localeCompare(b, 'fr')).map(value => `<option value="${encodeURIComponent(value)}">${value}</option>`).join('')}`; }
 
 function applyCollectionFilters() {
@@ -93,6 +95,19 @@ function applyCollectionFilters() {
   const shown = [...document.querySelectorAll('.card-entry')].filter(entry => !entry.hidden).length;
   const status = document.querySelector('#collection-filter-status');
   if (status) status.textContent = `${shown} carte${shown > 1 ? 's' : ''} affichée${shown > 1 ? 's' : ''}`;
+}
+
+function applyPlayerDetailFilters() {
+  const sourceId = document.querySelector('#player-filter-source')?.value || '';
+  const category = decodeURIComponent(document.querySelector('#player-filter-category')?.value || '');
+  const rarity = document.querySelector('#player-filter-rarity')?.value || '';
+  document.querySelectorAll('.player-card-entry').forEach(entry => {
+    entry.hidden = !((!sourceId || entry.dataset.source === sourceId) && (!category || entry.dataset.category === category) && (!rarity || entry.dataset.rarity === rarity));
+  });
+  document.querySelectorAll('.appearance').forEach(appearance => { appearance.hidden = ![...appearance.querySelectorAll('.player-card-entry')].some(entry => !entry.hidden); });
+  const count = [...document.querySelectorAll('.player-card-entry')].filter(entry => !entry.hidden).length;
+  const status = document.querySelector('#player-filter-status');
+  if (status) status.textContent = `${count} carte${count > 1 ? 's' : ''} affichée${count > 1 ? 's' : ''}`;
 }
 
 const fallback = [
@@ -116,14 +131,15 @@ function renderPlayers() {
     player.maxRarity = Math.max(...player.appearances.map(item => rarityFor(item).stars));
     player.extensions = new Set(player.appearances.map(item => item.sourceId)).size;
   });
-  if (playerSort.value === 'rarity') players.sort((a, b) => b.maxRarity - a.maxRarity || b.extensions - a.extensions || a.name.localeCompare(b.name, 'fr'));
-  if (playerSort.value === 'extensions') players.sort((a, b) => b.extensions - a.extensions || b.maxRarity - a.maxRarity || a.name.localeCompare(b.name, 'fr'));
-  if (playerSort.value === 'name') players.sort((a, b) => a.name.localeCompare(b.name, 'fr'));
-  const visible = players;
+  const filteredPlayers = players.filter(player => !playerRarityFilter.value || player.maxRarity >= Number(playerRarityFilter.value));
+  if (playerSort.value === 'rarity') filteredPlayers.sort((a, b) => b.maxRarity - a.maxRarity || b.extensions - a.extensions || a.name.localeCompare(b.name, 'fr'));
+  if (playerSort.value === 'extensions') filteredPlayers.sort((a, b) => b.extensions - a.extensions || b.maxRarity - a.maxRarity || a.name.localeCompare(b.name, 'fr'));
+  if (playerSort.value === 'name') filteredPlayers.sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+  const visible = filteredPlayers;
   playerList.innerHTML = visible.map(player => {
-    return `<button class="player-row" type="button" data-player="${encodeURIComponent(player.name)}"><span class="player-name">${player.name}</span><span class="player-rarity">${stars({ stars: player.maxRarity, label: 'Rareté maximale' })}<small>${player.extensions} extension${player.extensions > 1 ? 's' : ''}</small></span><b>→</b></button>`;
+    return `<button class="player-row" type="button" data-player="${encodeURIComponent(player.name)}"><span class="player-name">${player.name}</span><span class="player-rarity">${rarityPill({ stars: player.maxRarity, key: String(player.maxRarity), label: player.maxRarity === 5 ? 'Très rare' : player.maxRarity === 4 ? 'Rare' : player.maxRarity === 3 ? 'Insert' : 'Base' })}<small>${player.extensions} extension${player.extensions > 1 ? 's' : ''}</small></span><b>→</b></button>`;
   }).join('') || '<p class="empty">Aucun joueur ne correspond à cette recherche.</p>';
-  playerStatus.textContent = `${players.length} joueur${players.length > 1 ? 's' : ''} trouvé${players.length > 1 ? 's' : ''} · ${entries.length} références indexées depuis les PDF Topps.`;
+  playerStatus.textContent = `${filteredPlayers.length} joueur${filteredPlayers.length > 1 ? 's' : ''} affiché${filteredPlayers.length > 1 ? 's' : ''} · ${entries.length} références indexées depuis les PDF Topps.`;
 }
 
 function openCollection(id) {
@@ -159,12 +175,13 @@ function openPlayer(name) {
     if (!grouped.has(appearance.sourceId)) grouped.set(appearance.sourceId, []);
     grouped.get(appearance.sourceId).push(appearance);
   });
+  const categories = new Set(player.appearances.map(categoryFor));
   const rows = [...grouped.entries()].map(([sourceId, appearances]) => {
     const source = sources.find(item => item.id === sourceId);
-    const refs = appearances.map(item => `<span>${categoryFor(item)} · ${item.section} · ${item.ref} ${rarityBadge(item)}</span>`).join('');
+    const refs = appearances.map(item => `<span class="player-card-entry" data-source="${sourceId}" data-category="${categoryFor(item)}" data-rarity="${rarityFor(item).key}"><span>${categoryFor(item)} · ${item.section} · ${item.ref}</span>${rarityBadge(item)}</span>`).join('');
     return `<article class="appearance"><div class="appearance-art ${source.color}"><small>TOPPS</small><b>${source.name.replace('Topps ', '').split(' ').slice(0, 2).join('<br />')}</b><i>${source.season}</i></div><div><p>${source.season} · ${source.type}</p><h3>${source.name}</h3><div class="appearance-refs">${refs}</div></div><a href="${source.pdf}" target="_blank" rel="noopener" aria-label="Checklist ${source.name}">↗</a></article>`;
   }).join('');
-  document.querySelector('#dialog-content').innerHTML = `<p class="eyebrow">Index joueur</p><h2>${player.name}</h2><p class="dialog-intro">${grouped.size} extension${grouped.size > 1 ? 's' : ''} Topps Football répertoriée${grouped.size > 1 ? 's' : ''}</p><div class="player-appearances">${rows}</div>`;
+  document.querySelector('#dialog-content').innerHTML = `<p class="eyebrow">Index joueur</p><h2>${player.name}</h2><p class="dialog-intro">${grouped.size} extension${grouped.size > 1 ? 's' : ''} Topps Football répertoriée${grouped.size > 1 ? 's' : ''}</p><div class="rarity-legend"><span>${stars({ stars: 1, label: 'Base' })} Base</span><span>${stars({ stars: 3, label: 'Insert' })} Insert</span><span>${stars({ stars: 4, label: 'Rare' })} Rare</span><span>${stars({ stars: 5, label: 'Très rare' })} Très rare</span></div><div class="collection-filters player-detail-filters"><label>Extension <select id="player-filter-source"><option value="">Toutes les extensions</option>${[...grouped.keys()].map(id => `<option value="${id}">${sources.find(source => source.id === id).name}</option>`).join('')}</select></label><label>Catégorie <select id="player-filter-category">${optionList(categories, 'Toutes les catégories')}</select></label><label>Rareté <select id="player-filter-rarity"><option value="">Toutes les raretés</option><option value="1">★ Base</option><option value="3">★★★ Insert</option><option value="4">★★★★ Rare</option><option value="5">★★★★★ Très rare</option></select></label><span id="player-filter-status">${player.appearances.length} cartes affichées</span></div><div class="player-appearances">${rows}</div>`;
   dialog.showModal();
 }
 
@@ -182,7 +199,8 @@ async function loadChecklists() {
 collectionSearch.addEventListener('input', renderCollections);
 playerSearch.addEventListener('input', renderPlayers);
 playerSort.addEventListener('change', renderPlayers);
-document.addEventListener('change', event => { if (event.target.closest('.collection-filters')) applyCollectionFilters(); });
+playerRarityFilter.addEventListener('change', renderPlayers);
+document.addEventListener('change', event => { if (event.target.closest('.player-detail-filters')) applyPlayerDetailFilters(); else if (event.target.closest('.collection-filters')) applyCollectionFilters(); });
 playerFullscreen.addEventListener('click', async () => {
   try {
     if (document.fullscreenElement) await document.exitFullscreen();

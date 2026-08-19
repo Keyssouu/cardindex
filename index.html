@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="football.css" />
     <link rel="stylesheet" href="club-layout.css" />
     <link rel="stylesheet" href="filters.css" />
+    <link rel="stylesheet" href="player-filters.css" />
   </head>
   <body>
     <header class="site-header">
@@ -39,7 +40,7 @@
       </section>
       <section class="player-index" id="joueurs">
         <div class="section-heading"><div><p class="eyebrow">Index transversal</p><h2>Les joueurs</h2></div><p>Un clic affiche les extensions,<br />les sous-ensembles et les références.</p></div>
-        <div class="player-controls"><label class="sort-label">Trier par <select id="player-sort"><option value="rarity">Rareté maximale</option><option value="name">Nom du joueur</option><option value="extensions">Nombre d’extensions</option></select></label><button id="player-fullscreen" class="button button-outline" type="button">Plein écran <span>↗</span></button></div>
+        <div class="player-controls"><label class="sort-label">Trier par <select id="player-sort"><option value="rarity">Rareté maximale</option><option value="name">Nom du joueur</option><option value="extensions">Nombre d’extensions</option></select></label><label class="sort-label">Rareté <select id="player-rarity-filter"><option value="">Toutes</option><option value="1">★ Base et plus</option><option value="3">★★★ Insert et plus</option><option value="4">★★★★ Rare et plus</option><option value="5">★★★★★ Très rare</option></select></label><button id="player-fullscreen" class="button button-outline" type="button">Plein écran <span>↗</span></button></div>
         <label class="player-search"><span>⌕</span><input id="player-search" type="search" placeholder="Rechercher un joueur : Haaland, Dembélé…" autocomplete="off" /></label>
         <p id="player-status" class="player-status">Chargement des checklists officielles…</p>
         <div id="player-list" class="player-list" aria-live="polite"></div>
