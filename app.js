@@ -58,10 +58,10 @@ function titleCase(value) { return value.toLowerCase().replace(/\b\w/g, letter =
 
 function rarityFor(entry) {
   const label = normalise(`${entry.category || ''} ${entry.section}`);
-  if (/(autograph|auto|relic|only1|superfractor|mythical)/.test(label)) return { stars: 5, label: 'Très rare' };
-  if (/(variation|short print|ssp|rainbow|nightmare|magnum|mask off|fusion)/.test(label)) return { stars: 4, label: 'Rare' };
-  if (/(base|first team|current stars)/.test(label)) return { stars: 1, label: 'Base' };
-  return { stars: 3, label: 'Insert' };
+  if (/(autograph|auto|relic|only1|superfractor|mythical)/.test(label)) return { stars: 5, label: 'Très rare', key: '5' };
+  if (/(variation|short print|ssp|rainbow|nightmare|magnum|mask off|fusion)/.test(label)) return { stars: 4, label: 'Rare', key: '4' };
+  if (/(base|first team|current stars)/.test(label)) return { stars: 1, label: 'Base', key: '1' };
+  return { stars: 3, label: 'Insert', key: '3' };
 }
 
 function categoryFor(entry) {
@@ -72,6 +72,28 @@ function categoryFor(entry) {
 function categoryRank(category) { return ({ AUTOGRAPH: 0, RELIC: 0, BASE: 1, INSERT: 2 })[category] ?? 3; }
 
 function stars(rarity) { return `<span class="stars" aria-label="Rareté : ${rarity.label}, ${rarity.stars} étoiles">${'★'.repeat(rarity.stars)}${'☆'.repeat(5 - rarity.stars)}</span>`; }
+function rarityBadge(entry) { const rarity = rarityFor(entry); return `<span class="rarity-badge rarity-${rarity.key}">${stars(rarity)} <em>${rarity.label}</em></span>`; }
+function optionList(values, label) { return `<option value="">${label}</option>${[...values].sort((a, b) => a.localeCompare(b, 'fr')).map(value => `<option value="${encodeURIComponent(value)}">${value}</option>`).join('')}`; }
+
+function applyCollectionFilters() {
+  const club = decodeURIComponent(document.querySelector('#filter-club')?.value || '');
+  const category = decodeURIComponent(document.querySelector('#filter-category')?.value || '');
+  const style = decodeURIComponent(document.querySelector('#filter-style')?.value || '');
+  const rarity = document.querySelector('#filter-rarity')?.value || '';
+  document.querySelectorAll('.club-card').forEach(card => {
+    card.querySelectorAll('.card-style').forEach(styleBlock => {
+      styleBlock.querySelectorAll('.card-entry').forEach(entry => {
+        const matches = (!club || entry.dataset.club === club) && (!category || entry.dataset.category === category) && (!style || entry.dataset.style === style) && (!rarity || entry.dataset.rarity === rarity);
+        entry.hidden = !matches;
+      });
+      styleBlock.hidden = ![...styleBlock.querySelectorAll('.card-entry')].some(entry => !entry.hidden);
+    });
+    card.hidden = ![...card.querySelectorAll('.card-style')].some(styleBlock => !styleBlock.hidden);
+  });
+  const shown = [...document.querySelectorAll('.card-entry')].filter(entry => !entry.hidden).length;
+  const status = document.querySelector('#collection-filter-status');
+  if (status) status.textContent = `${shown} carte${shown > 1 ? 's' : ''} affichée${shown > 1 ? 's' : ''}`;
+}
 
 const fallback = [
   ['Erling Haaland', 'Manchester City', 'finest-pl-2026'], ['Cole Palmer', 'Chelsea', 'finest-pl-2026'], ['Mohamed Salah', 'Liverpool FC', 'finest-pl-2026'], ['Viktor Gyökeres', 'Arsenal', 'finest-pl-2026'], ['Lionel Messi', 'Paris Saint-Germain', 'psg-team-set-2025'], ['Ousmane Dembélé', 'Paris Saint-Germain', 'psg-team-set-2025'], ['Désiré Doué', 'Paris Saint-Germain', 'psg-team-set-2025'], ['Lamine Yamal', 'FC Barcelona', 'ucc-deco-2025'], ['Kylian Mbappé', 'Real Madrid C.F.', 'ucc-deco-2025'], ['Viktor Gyökeres', 'Arsenal', 'merlin-pl-2026']
@@ -110,6 +132,8 @@ function openCollection(id) {
   const players = new Set(appearances.map(entry => entry.key)).size;
   const clubs = new Map();
   appearances.forEach(entry => { if (!clubs.has(entry.team)) clubs.set(entry.team, []); clubs.get(entry.team).push(entry); });
+  const allCategories = new Set(appearances.map(categoryFor));
+  const allStyles = new Set(appearances.map(entry => entry.section));
   const clubCards = [...clubs.entries()].sort(([a], [b]) => a.localeCompare(b, 'fr')).map(([club, cards]) => {
     const categories = new Map();
     cards.forEach(entry => {
@@ -119,11 +143,11 @@ function openCollection(id) {
       if (!styles.has(entry.section)) styles.set(entry.section, []);
       styles.get(entry.section).push(entry);
     });
-    const content = [...categories.entries()].sort(([a], [b]) => categoryRank(a) - categoryRank(b) || a.localeCompare(b, 'fr')).map(([category, styles]) => `<section class="club-category"><h4>${category}</h4>${[...styles.entries()].sort(([a], [b]) => a.localeCompare(b, 'fr')).map(([style, styleCards]) => `<div class="card-style"><h5>${style}</h5>${styleCards.sort((a, b) => a.player.localeCompare(b.player, 'fr') || a.ref.localeCompare(b.ref)).map(entry => `<button type="button" data-player="${encodeURIComponent(entry.player)}"><span>${entry.player}${entry.rookie ? '<i>Rookie</i>' : ''}</span><small>${entry.ref}</small><b>↗</b></button>`).join('')}</div>`).join('')}</section>`).join('');
+    const content = [...categories.entries()].sort(([a], [b]) => categoryRank(a) - categoryRank(b) || a.localeCompare(b, 'fr')).map(([category, styles]) => `<section class="club-category"><h4>${category}</h4>${[...styles.entries()].sort(([a], [b]) => a.localeCompare(b, 'fr')).map(([style, styleCards]) => `<div class="card-style" data-style="${style}"><h5>${style}</h5>${styleCards.sort((a, b) => a.player.localeCompare(b.player, 'fr') || a.ref.localeCompare(b.ref)).map(entry => `<button class="card-entry" type="button" data-player="${encodeURIComponent(entry.player)}" data-club="${club}" data-category="${category}" data-style="${style}" data-rarity="${rarityFor(entry).key}"><span>${entry.player}${entry.rookie ? '<i>Rookie</i>' : ''}</span><small>${entry.ref}</small>${rarityBadge(entry)}<b>↗</b></button>`).join('')}</div>`).join('')}</section>`).join('');
     return `<article class="club-card"><header><span class="club-badge">${club.split(' ').map(part => part[0]).join('').slice(0, 3)}</span><h3>${club}</h3><small>${cards.length} cartes</small></header>${content}</article>`;
   }).join('');
   dialog.classList.add('collection-dialog');
-  document.querySelector('#dialog-content').innerHTML = `<p class="eyebrow">Checklist officielle Topps</p><h2>${source.name}</h2><p class="dialog-intro">Football · Saison ${source.season} · ${source.pages} pages</p><div class="dialog-stats"><div><b>${source.cards}</b><span>format annoncé</span></div><div><b>${players || '—'}</b><span>joueurs indexés</span></div><div><b>${appearances.length || '—'}</b><span>références lues</span></div></div><div class="club-board">${clubCards}</div><a class="button button-primary" href="${source.pdf}" target="_blank" rel="noopener">Ouvrir la checklist Topps <span>↗</span></a>`;
+  document.querySelector('#dialog-content').innerHTML = `<p class="eyebrow">Checklist officielle Topps</p><h2>${source.name}</h2><p class="dialog-intro">Football · Saison ${source.season} · ${source.pages} pages</p><div class="dialog-stats"><div><b>${source.cards}</b><span>format annoncé</span></div><div><b>${players || '—'}</b><span>joueurs indexés</span></div><div><b>${appearances.length || '—'}</b><span>références lues</span></div></div><div class="rarity-legend"><span>${stars({ stars: 1, label: 'Base' })} Base</span><span>${stars({ stars: 3, label: 'Insert' })} Insert</span><span>${stars({ stars: 4, label: 'Rare' })} Rare</span><span>${stars({ stars: 5, label: 'Très rare' })} Autographe / relic</span></div><div class="collection-filters"><label>Club <select id="filter-club">${optionList(clubs.keys(), 'Tous les clubs')}</select></label><label>Catégorie <select id="filter-category">${optionList(allCategories, 'Toutes les catégories')}</select></label><label>Style <select id="filter-style">${optionList(allStyles, 'Tous les styles')}</select></label><label>Rareté <select id="filter-rarity"><option value="">Toutes les raretés</option><option value="1">★ Base</option><option value="3">★★★ Insert</option><option value="4">★★★★ Rare</option><option value="5">★★★★★ Très rare</option></select></label><span id="collection-filter-status">${appearances.length} cartes affichées</span></div><p class="rarity-note">La rareté est une indication de lecture basée sur la catégorie et le sous-ensemble de la checklist.</p><div class="club-board">${clubCards}</div><a class="button button-primary" href="${source.pdf}" target="_blank" rel="noopener">Ouvrir la checklist Topps <span>↗</span></a>`;
   dialog.showModal();
 }
 
@@ -137,7 +161,7 @@ function openPlayer(name) {
   });
   const rows = [...grouped.entries()].map(([sourceId, appearances]) => {
     const source = sources.find(item => item.id === sourceId);
-    const refs = appearances.map(item => `${categoryFor(item)} · ${item.section} · ${item.ref}`).join('<br />');
+    const refs = appearances.map(item => `<span>${categoryFor(item)} · ${item.section} · ${item.ref} ${rarityBadge(item)}</span>`).join('');
     return `<article class="appearance"><div class="appearance-art ${source.color}"><small>TOPPS</small><b>${source.name.replace('Topps ', '').split(' ').slice(0, 2).join('<br />')}</b><i>${source.season}</i></div><div><p>${source.season} · ${source.type}</p><h3>${source.name}</h3><div class="appearance-refs">${refs}</div></div><a href="${source.pdf}" target="_blank" rel="noopener" aria-label="Checklist ${source.name}">↗</a></article>`;
   }).join('');
   document.querySelector('#dialog-content').innerHTML = `<p class="eyebrow">Index joueur</p><h2>${player.name}</h2><p class="dialog-intro">${grouped.size} extension${grouped.size > 1 ? 's' : ''} Topps Football répertoriée${grouped.size > 1 ? 's' : ''}</p><div class="player-appearances">${rows}</div>`;
@@ -158,6 +182,7 @@ async function loadChecklists() {
 collectionSearch.addEventListener('input', renderCollections);
 playerSearch.addEventListener('input', renderPlayers);
 playerSort.addEventListener('change', renderPlayers);
+document.addEventListener('change', event => { if (event.target.closest('.collection-filters')) applyCollectionFilters(); });
 playerFullscreen.addEventListener('click', async () => {
   try {
     if (document.fullscreenElement) await document.exitFullscreen();
